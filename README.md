@@ -11,7 +11,20 @@ Additional software needed:
 
 To install all dependencies, try running `install_dependencies.sh`, which installs dependencies to `~/split_seq_reqs/`.
 
-To install the package: run `pip install -e .` (might need sudo).
+To install the package, run:
+
+```
+git clone https://github.com/yjzhang/split-seq-pipeline.git
+cd split-seq-pipeline
+export HTSLIB_CONFIGURE_OPTIONS=--disable-bz2
+pip install cython
+pip install pandas
+pip install scipy
+pip install matplotlib
+pip install -e .
+```
+
+The last command might need sudo.
 
 ## Generating a reference genome
 Download human reference genome<br>
