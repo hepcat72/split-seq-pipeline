@@ -1,3 +1,8 @@
+# Differences compared to yjzhang/split-seq-pipeline as of 4/17/2020
+
+- Fixed bug that can cause some cell barcode combinations to be skipped when processing high quality sequencing samples or a small number of low yield samples (because the last cell barcode combination is never output, but more often than not is a mismatched cell barcode)
+- Added support for specifying a sample as being in a single well (e.g. `--sample name A1`)
+
 # Analysis tools for split-seq
 
 ## Requirements
